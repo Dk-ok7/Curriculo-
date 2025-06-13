@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
@@ -12,6 +12,7 @@
       padding: 0;
       color: #333;
     }
+
     .container {
       max-width: 900px;
       margin: 40px auto;
@@ -19,37 +20,53 @@
       border-radius: 12px;
       box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
       padding: 40px;
-      animation: fadeIn 0.8s ease;
+      animation: fadeIn 1s ease-in-out;
     }
+
     h1, h2 {
       color: #005f73;
     }
+
     h1 {
       display: flex;
       align-items: center;
       gap: 10px;
       font-size: 2em;
     }
+
     .emoji {
       font-size: 28px;
     }
+
     ul {
       padding-left: 20px;
     }
+
     .section {
       margin-bottom: 30px;
+      transition: background 0.3s ease;
     }
+
+    .section:hover {
+      background: #eaf4fc;
+      border-left: 5px solid #00b4d8;
+      padding-left: 15px;
+    }
+
     .contact {
       font-style: italic;
       color: #555;
     }
+
     .contact a {
       color: #0077b6;
       text-decoration: none;
     }
+
     .contact a:hover {
       text-decoration: underline;
     }
+
     .tag {
       background-color: #ade8f4;
       color: #0077b6;
@@ -59,21 +76,32 @@
       display: inline-block;
       margin: 5px 5px 5px 0;
     }
+
+    .download-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #0077b6;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .download-button:hover {
+      background: #023e8a;
+    }
+
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .section:hover {
-      background: #eaf4fc;
-      border-left: 5px solid #00b4d8;
-      padding-left: 15px;
-      transition: 0.3s;
-    }
-    .highlight {
-      background: #fef9ef;
-      padding: 10px;
-      border-left: 4px solid #f9c74f;
-      margin-bottom: 20px;
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
@@ -81,11 +109,13 @@
   <div class="container">
     <h1>Adryano Krokovec Dourado <span class="emoji">✈️</span></h1>
     <p class="contact">
-      São Paulo – SP | 
-      <a href="tel:+5511910701962">(11) 91070-1962</a> | 
-      <a href="mailto:adryanokrokovec@gmail.com">adryanokrokovec@gmail.com</a> | 
+      São Paulo – SP |
+      <a href="tel:+5511910701962">(11) 91070-1962</a> |
+      <a href="mailto:adryanokrokovec@gmail.com">adryanokrokovec@gmail.com</a> |
       <a href="https://www.linkedin.com/in/adryano-krokovec-a6960636b/" target="_blank">LinkedIn</a>
     </p>
+
+    <a class="download-button" href="curriculo-adryano-krokovec (3).pdf" download>📄 Baixar Currículo em PDF</a>
 
     <div class="section">
       <h2>Objetivo</h2>
@@ -95,34 +125,38 @@
     <div class="section">
       <h2>Experiência Profissional</h2>
       <ul>
-        <li><strong>Supervisor – Shelter (empresa de costura de pequeno porte)</strong><br><span class="tag">São Paulo – SP</span> <span class="tag">6 meses</span>
+        <li><strong>Supervisor – Shelter (Empresa de Costura)</strong><br>
+          <span class="tag">São Paulo – SP</span>
+          <span class="tag">dez/2023 – mai/2024</span>
           <ul>
-            <li>Liderança de equipe e organização da produção.</li>
-            <li>Controle de prazos e atendimento a demandas internas.</li>
+            <li>Liderança de equipe e organização da produção para garantir a eficiência e qualidade.</li>
+            <li>Controle de prazos e atendimento a demandas internas para assegurar a satisfação do cliente.</li>
           </ul>
         </li>
-        <li><strong>Jovem Aprendiz – Programa Checkout – Chama Supermercados</strong><br><span class="tag">São Paulo – SP</span> <span class="tag">6 meses</span>
+        <li><strong>Jovem Aprendiz – Programa Checkout – Chama Supermercados</strong><br>
+          <span class="tag">São Paulo – SP</span>
+          <span class="tag">fev/2023 – jul/2023</span>
           <ul>
-            <li>Atendimento ao cliente no caixa e suporte em dúvidas gerais.</li>
-            <li>Organização de filas e orientação dos clientes no ambiente da loja.</li>
+            <li>Atendimento ao cliente no caixa, resolução de dúvidas e fornecimento de suporte.</li>
+            <li>Organização de filas e orientação dos clientes no ambiente da loja para garantir uma experiência positiva.</li>
           </ul>
         </li>
       </ul>
     </div>
 
     <div class="section">
-      <h2> Formação Acadêmica</h2>
+      <h2>🎓 Formação Acadêmica</h2>
       <ul>
-        <li>Ensino Médio Completo – EE Prof. João Borges, concluído em 2023</li>
-        <li>Auxiliar Administrativo – SENAC</li>
-        <li>Inglês – CNA (7 anos, concluído em 2023 – nível avançado)</li>
+        <li>Ensino Médio Completo – EE Prof. João Borges, concluído em dez/2023</li>
+        <li>Auxiliar Administrativo – SENAC (6 meses, concluído em jun/2024)</li>
+        <li>Inglês – CNA (7 anos, concluído em dez/2023 – nível avançado)</li>
       </ul>
     </div>
 
     <div class="section">
       <h2>Idiomas</h2>
       <ul>
-        <li>Inglês – Avançado (leitura, escrita e conversação)</li>
+        <li>Inglês: Nivel Avançado (leitura, escrita e conversação)</li>
       </ul>
     </div>
 
